@@ -48,7 +48,6 @@ class LoginForm extends Component {
         <label htmlFor="userNameInput">
           <input
             id="userNameInput"
-            data-testid="input-player-name"
             type="text"
             name="userName"
             value={ userName }
@@ -59,7 +58,6 @@ class LoginForm extends Component {
         <label htmlFor="userMailInput">
           <input
             id="userMailInput"
-            data-testid="input-gravatar-email"
             type="email"
             name="userMail"
             value={ userMail }
@@ -67,18 +65,15 @@ class LoginForm extends Component {
             placeholder="Digite seu email"
           />
         </label>
-        <div id="loginBtnsContainer">
-          <button
-            id="loginBtn"
-            type="button"
-            data-testid="btn-play"
-            disabled={ !(userName.length > minNumOfCaracs
-              && userMail.length > 0) } // O botão só será habilitado quando userName e userMail apresentarem, pelo menos, 1 caractere.
-            onClick={ this.onLogIn }
-          >
-            Jogar
-          </button>
-        </div>
+        <button
+          id="loginBtn"
+          type="button"
+          disabled={ !(userName.length > minNumOfCaracs
+            && userMail.length > 0) } // O botão só será habilitado quando userName e userMail apresentarem, pelo menos, 1 caractere.
+          onClick={ this.onLogIn }
+        >
+          Jogar
+        </button>
       </form>
     );
   }

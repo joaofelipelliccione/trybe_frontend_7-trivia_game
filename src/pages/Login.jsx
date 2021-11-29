@@ -1,6 +1,7 @@
 import React from 'react';
 import { Redirect } from 'react-router';
 import LoginForm from '../components/LoginForm';
+import '../styles/login.css';
 
 class Login extends React.Component {
   constructor() {
@@ -25,7 +26,7 @@ class Login extends React.Component {
         <div id="loginFormContainer">
           <LoginForm />
           <button
-            data-testid="btn-settings"
+            id="settingsBtn"
             type="button"
             onClick={ () => this.setState({ mustRedirectToSettings: true }) }
           >
