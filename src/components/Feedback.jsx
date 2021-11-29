@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import reviewsImg from '../images/feedback-reviews.svg';
+import oldGameImg from '../images/feedback-game.svg';
 import FeedbackBtns from './FeedbackBtns';
 import '../styles/feedback.css';
 
@@ -38,7 +40,8 @@ class Feedback extends React.Component {
           <FeedbackBtns />
         </div>
         <div id="feedbackImgsContainer">
-          
+          <img src={reviewsImg} alt="Feedback" width="500px"/>
+          <img src={oldGameImg} alt="Console Antigo" width="400px"/>
         </div>
       </main>
     );

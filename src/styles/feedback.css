@@ -22,7 +22,7 @@
   align-self: center;
   align-items: center;
   width: 50%;
-  margin: 2% 0;
+  margin: 0.5% 0;
   padding: 1%;
 }
 
@@ -50,4 +50,11 @@
   font-size: 1.4em;
   text-align: center;
   margin-top: 0;
+}
+
+#feedbackImgsContainer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 65%;
+  margin: 2% 0;
 }
