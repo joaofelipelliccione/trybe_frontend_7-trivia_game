@@ -5,6 +5,7 @@ import { fetchTriviaQuestions as fetchTriviaQuestAC } from '../redux/action';
 import Header from '../components/Header';
 import QuestionsAndAnswers from '../components/QuestionsAndAnswers';
 import Feedback from '../components/Feedback';
+import '../styles/game.css';
 
 class Game extends React.Component {
   constructor() {

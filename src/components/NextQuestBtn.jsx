@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../styles/nextQuestBtn.css';
 
 class NextQuestBtn extends React.Component {
   render() {
@@ -7,7 +8,7 @@ class NextQuestBtn extends React.Component {
 
     return (
       <button
-        data-testid="btn-next"
+        id="nextQuestBtn"
         type="button"
         onClick={ onNextQuestClick }
       >

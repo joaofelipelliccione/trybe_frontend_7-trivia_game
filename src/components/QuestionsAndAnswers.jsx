@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import traditionalBorder, { greenBorder, redBorder } from './borderColors';
 import correctAnsInfoAC from '../redux/action';
 import NextQuestBtn from './NextQuestBtn';
+import '../styles/questionsAndAnswers.css';
 
 class QuestionsAndAnswers extends React.Component {
   constructor(props) {
@@ -113,42 +114,42 @@ class QuestionsAndAnswers extends React.Component {
         { questionsArray.map((questionObj) => (
           <div id="cardContainer2" key={ questionsArrIndex }>
             <div id="questionCard">
-              <h3 data-testid="question-category">{questionObj.category}</h3>
-              <p data-testid="question-text">{questionObj.question}</p>
+              <h3>{questionObj.category}</h3>
+              <p>{questionObj.question}</p>
             </div>
-            {[questionObj.correct_answer, ...questionObj.incorrect_answers]
-              .sort().map((alternative, index) => (
-                <div id="answerCard" key={ index }>
-                  {alternative === questionObj.correct_answer
-                    ? (
-                      <button
-                        data-testid="correct-answer"
-                        className="correctAnswer"
-                        type="button"
-                        onClick={ this.onAnswerClick }
-                        style={ mustChangeBorderCol ? greenBorder : traditionalBorder }
-                        disabled={ timerMax <= 0 || hasAnswered }
-                      >
-                        {alternative}
-                      </button>
-                    )
-                    : (
-                      <button
-                        data-testid="wrong-answer"
-                        className="incorrectAnswer"
-                        type="button"
-                        onClick={ this.onAnswerClick }
-                        style={ mustChangeBorderCol ? redBorder : traditionalBorder }
-                        disabled={ timerMax <= 0 || hasAnswered }
-                      >
-                        {alternative}
-                      </button>
-                    )}
-                </div>
-              ))}
+            <div id="answerBtnsContainer">
+              {[questionObj.correct_answer, ...questionObj.incorrect_answers]
+                .sort().map((alternative, index) => (
+                  <div id="answerCard" key={ index }>
+                    {alternative === questionObj.correct_answer
+                      ? (
+                        <button
+                          className="correctAnswer"
+                          type="button"
+                          onClick={ this.onAnswerClick }
+                          style={ mustChangeBorderCol ? greenBorder : traditionalBorder }
+                          disabled={ timerMax <= 0 || hasAnswered }
+                        >
+                          {alternative}
+                        </button>
+                      )
+                      : (
+                        <button
+                          className="incorrectAnswer"
+                          type="button"
+                          onClick={ this.onAnswerClick }
+                          style={ mustChangeBorderCol ? redBorder : traditionalBorder }
+                          disabled={ timerMax <= 0 || hasAnswered }
+                        >
+                          {alternative}
+                        </button>
+                      )}
+                  </div>
+                ))}
+            </div>
           </div>
         ))[questionsArrIndex] }
-        <h2>{ timerMax }</h2>
+        <h4>{ timerMax }</h4>
         { (timerMax <= 0 || hasAnswered)
           && <NextQuestBtn onNextQuestClick={ this.onNextQuestClick } /> }
       </main>
