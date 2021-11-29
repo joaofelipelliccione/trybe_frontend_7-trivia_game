@@ -35,15 +35,14 @@ class Header extends React.Component {
           <img
             src={ GRAVATAR_END_POINT }
             alt="Foto do jogador"
-            data-testid="header-profile-picture"
           />
-          <span data-testid="header-player-name" id="headerUserNameOutput">
+          <span id="headerUserNameOutput">
             { userNameProp }
           </span>
         </div>
         <span id="scoreContainer">
           Placar:
-          <output data-testid="header-score">
+          <output>
             {' '}
             { scoreProp }
           </output>
