@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+import '../styles/feedbackBtns.css';
 
 class FeedbackBtns extends React.Component {
   constructor() {
@@ -38,7 +39,6 @@ class FeedbackBtns extends React.Component {
           to="/ranking"
         >
           <button
-            data-testid="btn-ranking"
             type="button"
             onClick={ this.setLastGameInfoToLS }
           >
@@ -49,7 +49,6 @@ class FeedbackBtns extends React.Component {
           to="/"
         >
           <button
-            data-testid="btn-play-again"
             type="button"
           >
             Jogar Novamente

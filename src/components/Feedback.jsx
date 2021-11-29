@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import FeedbackBtns from './FeedbackBtns';
+import '../styles/feedback.css';
 
 class Feedback extends React.Component {
   render() {
@@ -9,31 +10,36 @@ class Feedback extends React.Component {
     const numberThree = 3;
 
     return (
-      <main id="feedbackCard">
-        <div id="feedbackMsg">
-          {assertionsProp < numberThree
-            ? <h2 data-testid="feedback-text">Podia ser melhor...</h2>
-            : <h2 data-testid="feedback-text">Mandou bem!</h2>}
-          <p>
-            Você acertou
-            <output data-testid="feedback-total-question">
+      <main id="feedbackPage">
+        <div id="feedbackCard">
+          <div id="feedbackMsg">
+            {assertionsProp < numberThree
+              ? <h2>Poderia ter ido melhor...</h2>
+              : <h2>Mandou bem!</h2>}
+            <p>
+              Você acertou
+              <output>
+                {' '}
+                {Number(assertionsProp)}
+              </output>
               {' '}
-              {Number(assertionsProp)}
-            </output>
-            {' '}
-            questões.
-          </p>
-          <p>
-            Um total de
-            <output data-testid="feedback-total-score">
+              questão(ões).
+            </p>
+            <p>
+              Um total de
+              <output>
+                {' '}
+                {Number(scoreProp)}
+              </output>
               {' '}
-              {Number(scoreProp)}
-            </output>
-            {' '}
-            pontos.
-          </p>
+              pontos.
+            </p>
+          </div>
+          <FeedbackBtns />
         </div>
-        <FeedbackBtns />
+        <div id="feedbackImgsContainer">
+          
+        </div>
       </main>
     );
   }
