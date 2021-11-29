@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../styles/settings.css';
 
 class Settings extends React.Component {
   render() {
@@ -10,6 +11,7 @@ class Settings extends React.Component {
           to="/"
         >
           <button
+            id="backToHomeFromSettings"
             type="button"
           >
             Voltar para Home
