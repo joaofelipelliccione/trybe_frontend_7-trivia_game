@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/trybe_frontend_7-trivia_game/static/css/main.e8ed5596.chunk.css",
+    "main.js": "/trybe_frontend_7-trivia_game/static/js/main.9d97221a.chunk.js",
+    "main.js.map": "/trybe_frontend_7-trivia_game/static/js/main.9d97221a.chunk.js.map",
+    "runtime-main.js": "/trybe_frontend_7-trivia_game/static/js/runtime-main.c0a24a24.js",
+    "runtime-main.js.map": "/trybe_frontend_7-trivia_game/static/js/runtime-main.c0a24a24.js.map",
+    "static/js/2.19d8cb72.chunk.js": "/trybe_frontend_7-trivia_game/static/js/2.19d8cb72.chunk.js",
+    "static/js/2.19d8cb72.chunk.js.map": "/trybe_frontend_7-trivia_game/static/js/2.19d8cb72.chunk.js.map",
+    "index.html": "/trybe_frontend_7-trivia_game/index.html",
+    "precache-manifest.897807c3be3ec830f8e9dd32c6f1ca98.js": "/trybe_frontend_7-trivia_game/precache-manifest.897807c3be3ec830f8e9dd32c6f1ca98.js",
+    "service-worker.js": "/trybe_frontend_7-trivia_game/service-worker.js",
+    "static/css/main.e8ed5596.chunk.css.map": "/trybe_frontend_7-trivia_game/static/css/main.e8ed5596.chunk.css.map",
+    "static/js/2.19d8cb72.chunk.js.LICENSE": "/trybe_frontend_7-trivia_game/static/js/2.19d8cb72.chunk.js.LICENSE",
+    "static/media/feedback-game.svg": "/trybe_frontend_7-trivia_game/static/media/feedback-game.10a45c72.svg",
+    "static/media/feedback-reviews.svg": "/trybe_frontend_7-trivia_game/static/media/feedback-reviews.ceccd1dc.svg",
+    "static/media/settings-img.svg": "/trybe_frontend_7-trivia_game/static/media/settings-img.049d5392.svg",
+    "static/media/trivia.png": "/trybe_frontend_7-trivia_game/static/media/trivia.466d153e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c0a24a24.js",
+    "static/js/2.19d8cb72.chunk.js",
+    "static/css/main.e8ed5596.chunk.css",
+    "static/js/main.9d97221a.chunk.js"
+  ]
+}
