@@ -26,6 +26,11 @@ body {
   height: 30%;
 }
 
+#loginFormContainer img {
+  width: 250px;
+  margin-bottom: 1.5%;
+}
+
 #loginForm {
   background-color: #33658A;
   border-radius: 15px;

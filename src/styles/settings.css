@@ -17,7 +17,8 @@
   color: #2F4858;
   width: fit-content;
   text-align: center;
-  font-size: 2em;
+  font-size: 2.1em;
+  margin-top: 2%;
 }
 
 #settingsPage a {
@@ -44,4 +45,9 @@
   color: black;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   width: 35%;
+}
+
+#settingsPage img {
+  width: 650px;
+  margin-top: 3%;
 }

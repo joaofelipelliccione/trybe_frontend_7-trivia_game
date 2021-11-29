@@ -1,6 +1,7 @@
 import React from 'react';
 import { Redirect } from 'react-router';
 import LoginForm from '../components/LoginForm';
+import logo from '../images/trivia.png';
 import '../styles/login.css';
 
 class Login extends React.Component {
@@ -24,6 +25,7 @@ class Login extends React.Component {
     return (
       <main id="loginPageMain">
         <div id="loginFormContainer">
+          <img src={ logo } alt="Logo da Aplicação" />
           <LoginForm />
           <button
             id="settingsBtn"
