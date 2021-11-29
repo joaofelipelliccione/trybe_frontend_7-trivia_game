@@ -7,13 +7,13 @@
 }
 
 #websiteHeader {
-  background-image: linear-gradient(#189ab4, #6cd8e4);
-  border: solid 2px black;
+  background-image: linear-gradient(#189ab4, #86BBD8);
+  border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 2%;
-  padding: 1%;
+  padding: 1.5%;
 }
 
 #headerPlayerInfo {
