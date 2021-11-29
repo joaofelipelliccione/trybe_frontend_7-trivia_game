@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../styles/ranking.css';
 
 class Ranking extends React.Component {
   constructor() {
@@ -28,15 +29,15 @@ class Ranking extends React.Component {
 
     return (
       <div id="rankingPage">
-        <h1 data-testid="ranking-title">Tela de Ranking</h1>
+        <h1>Ranking dos Melhores Jogadores</h1>
         <div id="rankingContainer">
           {sortedRankingArray.map((microObj, index) => (
             <div id="eachRankingPosition" key={ index }>
               <img src={ microObj.picture } alt="Foto do jogador" />
-              <span data-testid={ `player-name-${index}` }>
+              <span>
                 {microObj.name}
               </span>
-              <output data-testid={ `player-score-${index}` }>
+              <output>
                 {Number(microObj.score)}
               </output>
             </div>
@@ -46,7 +47,6 @@ class Ranking extends React.Component {
           to="/"
         >
           <button
-            data-testid="btn-go-home"
             type="button"
           >
             Jogar Novamente
